@@ -9,7 +9,7 @@ import android.net.wifi.WifiManager
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_wifi.*
 
 class WiFiScanActivity: AppCompatActivity() {
 
@@ -36,7 +36,7 @@ class WiFiScanActivity: AppCompatActivity() {
 
                         var listStr = "" + scanResults.size
                         for (scanResult in scanResults) {
-                            listStr += "\n\nBSSID: " + scanResult.SSID + " " + scanResult.venueName
+                            listStr += "\n\nBSSID: " + scanResult.BSSID
                         }
 
                         textView.setText(listStr)
